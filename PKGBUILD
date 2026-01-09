@@ -12,7 +12,8 @@ depends=(qt6-base qt6-multimedia qt6-serialport qt6-svg qt6-multimedia-ffmpeg hi
 makedepends=(git qt6-tools clang)
 provides=("${_pkgname}")
 conflicts=("${_pkgname}")
-source=("git+https://github.com/TechxArtisanStudio/Openterface_QT.git"
+#source=("git+https://github.com/TechxArtisanStudio/Openterface_QT.git"
+source=("$_reponame::git+https://github.com/johnlane/Openterface_QT.git#branch=linux-build-fixes2"
         "openterfaceQT.desktop")
 sha256sums=('SKIP'
             '48d2a22fb5816c9bd7aa7641eb1a4d127effee888a823ce9dcc972b24741cce7')
