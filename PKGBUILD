@@ -2,7 +2,7 @@
 pkgname=openterface_qt-git
 _pkgname="${pkgname%-git}"
 _reponame=Openterface_QT
-pkgver=0.3.1.r1.gcac5ee1
+pkgver=0.5.9.r3.g2c8fe55
 pkgrel=1
 pkgdesc="Openterface Mini-KVM Host Application"
 arch=('x86_64')
@@ -27,9 +27,9 @@ build() {
 
 	/usr/lib/qt6/bin/lrelease openterfaceQT.pro
 
-	mkdir build && cd build
-	qmake6 ..	
-	make
+	mkdir -p build && cd build
+	qmake6 ..
+        SUBLIBS="-lX11 -lturbojpeg -lgstapp-1.0" make
 }
 
 package() {
