@@ -2,7 +2,7 @@
 pkgname=openterface_qt-git
 _pkgname="${pkgname%-git}"
 _reponame=Openterface_QT
-pkgver=0.5.9.r5.g4b04aca
+pkgver=0.5.9.r6.gd6009a7
 pkgrel=1
 pkgdesc="Openterface Mini-KVM Host Application"
 arch=('x86_64')
@@ -12,8 +12,8 @@ depends=(qt6-base qt6-multimedia qt6-serialport qt6-svg qt6-multimedia-ffmpeg hi
 makedepends=(git qt6-tools clang)
 provides=("${_pkgname}")
 conflicts=("${_pkgname}")
-#source=("git+https://github.com/TechxArtisanStudio/Openterface_QT.git"
-source=("$_reponame::git+https://github.com/johnlane/Openterface_QT.git#branch=linux-build-fixes2"
+source=("git+https://github.com/TechxArtisanStudio/Openterface_QT.git"
+#source=("$_reponame::git+https://github.com/johnlane/Openterface_QT.git#branch=linux-build-fixes2"
         "openterfaceQT.desktop")
 sha256sums=('SKIP'
             '48d2a22fb5816c9bd7aa7641eb1a4d127effee888a823ce9dcc972b24741cce7')
