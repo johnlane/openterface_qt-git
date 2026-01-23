@@ -2,7 +2,7 @@
 pkgname=openterface_qt-git
 _pkgname="${pkgname%-git}"
 _reponame=Openterface_QT
-pkgver=0.5.9.r6.gd6009a7
+pkgver=0.5.12.r0.gd413404
 pkgrel=1
 pkgdesc="Openterface Mini-KVM Host Application"
 arch=('x86_64')
